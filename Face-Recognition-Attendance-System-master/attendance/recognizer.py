@@ -27,31 +27,31 @@ while True:
         id,conf=recognizer.predict(roi_gray)
         if(conf < 50):
          if(id==1):
-            id='Shubam Walia'
+            id='_Name_'
             if((str(id)) not in dict):
                 filename=xlwrite.output('attendance','class1',1,id,'yes');
                 dict[str(id)]=str(id);
                 
          elif(id==2):
-            id = 'Rohan'
+            id = '_name_'
             if ((str(id)) not in dict):
                 filename =xlwrite.output('attendance', 'class1', 2, id, 'yes');
                 dict[str(id)] = str(id);
 
          elif(id==3):
-            id = 'Raveen'
+            id = '_name_'
             if ((str(id)) not in dict):
                 filename =xlwrite.output('attendance', 'class1', 3, id, 'yes');
                 dict[str(id)] = str(id);
 
          elif(id==4):
-            id = 'Sonu'
+            id = '_name_'
             if ((str(id)) not in dict):
                 filename =xlwrite.output('attendance', 'class1', 4, id, 'yes');
                 dict[str(id)] = str(id);
 
         else:
-             id = 'Unknown, can not recognize'
+             id = 'Unknown(name), can not recognize'
              flag=flag+1
              break
         
